@@ -16,11 +16,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 1000; /* High enough to ensure it's on top */
   font-weight: bold;
 }
 
-#nav{
+#nav {
   background-color: #252134;
 }
 
@@ -86,13 +86,17 @@ nav ul li:hover::after {
     flex-direction: column;
     width: 40%;
     background-color: #252134;
-    position: absolute;
+    position: fixed; /* Fixed position to overlay the entire viewport */
     top: 60px;
     right: 0;
+    z-index: 1000; /* Ensure the dropdown is on top of other content */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .nav-items.open {
     display: flex;
+    opacity: 1;
   }
 
   nav ul li {
@@ -108,11 +112,10 @@ nav ul li:hover::after {
     margin-left: 30%;
     height: 2px;
   }
-  #navcontact{
+  #navcontact {
     width: 60%;
     margin: auto;
   }
-
 }
 
 @media (max-width: 1200px) {

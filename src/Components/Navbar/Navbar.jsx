@@ -9,6 +9,10 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className='container' id='nav'>
       <img src={logo} alt="logoimage" className='logo' />
@@ -16,13 +20,13 @@ const Navbar = () => {
         ☰
       </button>
       <ul className={isMenuOpen ? 'nav-items open' : 'nav-items'}>
-        <li>Home</li>
-        <li>About</li>
-        <li>Members</li>
-        <li>Achievements</li>
-        <li>Sponsors</li>
-        <li>Gallery</li>
-        <li className='btn' id='navcontact'>Contact Us</li>
+        <li onClick={closeMenu}>Home</li>
+        <li onClick={closeMenu}>About</li>
+        <li onClick={closeMenu}>Members</li>
+        <li onClick={closeMenu}>Achievements</li>
+        <li onClick={closeMenu}>Sponsors</li>
+        <li onClick={closeMenu}>Gallery</li>
+        <li className='btn' id='navcontact' onClick={closeMenu}>Contact Us</li>
       </ul>
     </nav>
   );
