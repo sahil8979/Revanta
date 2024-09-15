@@ -48,6 +48,7 @@ const Hero = () => {
       </div>
       <button className="btns">Explore more</button>
     </div>
+   
   );
 };
 

@@ -74,11 +74,13 @@ nav ul li:hover::after {
   border: none;
   color: white;
   cursor: pointer;
+  right: 15px;
 }
 
 @media (max-width: 1000px) {
   .menu-toggle {
     display: block;
+
   }
 
   .nav-items {
