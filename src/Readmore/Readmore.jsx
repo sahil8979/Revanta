@@ -23,7 +23,7 @@ const Readmore = () => {
       </div>
       <div className='Team-Journey'>
         <h2>Team Journey</h2>
-        <p>Founded in 2008, TeamRevanta started with a few passionate motorsport enthusiasts at NIT Hamirpur. Through dedication and teamwork, we've evolved into the college's leading motorsport society. Our journey from a small group to a prominent force in collegiate racing showcases our commitment to innovation and excellence. Today, we proudly represent the pinnacle of motorsport achievement at NIT Hamirpur.</p>
+        <p>Founded in 2008, TeamRevanta started with a few passionate motorsport enthusiasts at NIT Hamirpur. Through dedication and teamwork, we have evolved into the colleges leading motorsport society. Our journey from a small group to a prominent force in collegiate racing showcases our commitment to innovation and excellence. Today, we proudly represent the pinnacle of motorsport achievement at NIT Hamirpur.</p>
       </div>
       <div className='Vision'>
         <h2>Vision</h2>
@@ -31,7 +31,7 @@ const Readmore = () => {
       </div>
       <div className='Get-Involved'>
         <h2>Get Involved</h2>
-        <p>Whether you're an aspiring engineer, a motorsport enthusiast, or someone passionate about innovation, TeamRevanta invites you to join our journey. Be a part of a community that thrives on collaboration, creativity, and a shared love for racing. Together, we can push the boundaries of what's possible and drive towards a future where excellence is our standard.</p>
+        <p>Whether you  are an aspiring engineer, a motorsport enthusiast, or someone passionate about innovation, TeamRevanta invites you to join our journey. Be a part of a community that thrives on collaboration, creativity, and a shared love for racing. Together, we can push the boundaries of what is possible and drive towards a future where excellence is our standard.</p>
       </div>
     </div>
   );
