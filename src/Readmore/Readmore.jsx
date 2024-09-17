@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Navbar from '../Components/Navbar/Navbar';
 import aboutimg from '../assets/hero3.jpg';
 import Title from '../Title/Title';
@@ -29,9 +29,9 @@ const Readmore = () => {
         <h2>Vision</h2>
         <p>At TeamRevanta, our vision is to inspire and lead in the world of collegiate motorsports by fostering a culture of innovation, teamwork, and technical excellence. We strive to push the boundaries of engineering and racing, continuously setting new standards and achieving excellence. Our goal is to empower future generations of engineers and enthusiasts, driving them to excel both on and off the track while making a lasting impact in the world of motorsports.</p>
       </div>
-      <div className='Get-Involved'>
+      <div className='Get-Involved' id="getmargin">
         <h2>Get Involved</h2>
-        <p>Whether you  are an aspiring engineer, a motorsport enthusiast, or someone passionate about innovation, TeamRevanta invites you to join our journey. Be a part of a community that thrives on collaboration, creativity, and a shared love for racing. Together, we can push the boundaries of what is possible and drive towards a future where excellence is our standard.</p>
+        <p>Whether you  are an aspiring engineer, a motorsport enthusiast, or someone passionate about innovation, TeamRevanta invites you to join our journey. Be a part of a community that thrives on collaboration, creativity, and a shared love for racing. Together, we can push the boundaries of whats possible and drive towards a future where excellence is our standard.</p>
       </div>
     </div>
   );

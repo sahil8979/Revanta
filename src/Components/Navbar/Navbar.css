@@ -1,6 +1,6 @@
 /* General styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
   font-family: "Poppins", sans-serif;
@@ -16,7 +16,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 1000; /* High enough to ensure it's on top */
+  z-index: 1000;
   font-weight: bold;
 }
 
@@ -88,33 +88,35 @@ nav ul li a:hover {
   border: none;
   color: white;
   cursor: pointer;
-  position: absolute; /* Absolute positioning for better control */
-  top: 15px; /* Adjust as needed */
+  position: absolute;
+  top: 15px;
 }
 
 @media (max-width: 1000px) {
   .menu-toggle {
     display: block;
     right: 15px;
-    margin-right: 15px; /* Adjust margin for spacing */
+    margin-right: 15px;
   }
 
   .nav-items {
     display: none;
     flex-direction: column;
-    width: 40%;
+    width: 60%; /* Increased width for better appearance */
     background-color: #252134;
-    position: fixed; /* Fixed position to overlay the entire viewport */
+    position: fixed;
     top: 60px;
     right: 0;
-    z-index: 1000; /* Ensure the dropdown is on top of other content */
+    z-index: 1000;
     opacity: 0;
+    padding-top: 20px; /* Add space between top and menu items */
     transition: opacity 0.3s ease-in-out;
   }
 
   .nav-items.open {
     display: flex;
     opacity: 1;
+    height: auto; /* Only take up the space needed for menu items */
   }
 
   nav ul li {
@@ -136,18 +138,26 @@ nav ul li a:hover {
   #navcontact {
     width: 60%;
     margin: auto;
+
+  }
+
+  /* Space after the contact button */
+  .nav-items li:last-child {
+    margin-bottom: 15px; /* Add 15px space below the contact button */
   }
 }
 
+/* Additional breakpoints to refine the layout on smaller screens */
 @media (max-width: 1200px) {
   nav ul li {
     font-size: 14px;
+   
   }
 
   .menu-toggle {
     display: block;
     right: 15px;
-    margin-right: 10px; /* Adjust margin for spacing */
+    margin-right: 10px;
   }
 
   nav ul li:hover {
@@ -162,12 +172,13 @@ nav ul li a:hover {
 @media (max-width: 900px) {
   nav ul li {
     font-size: 12px;
+    margin: 6px 0;
   }
 
   .menu-toggle {
     display: block;
     right: 20px;
-    margin-right: 10px; /* Adjust margin for spacing */
+    margin-right: 10px;
   }
 
   nav ul li:hover {
@@ -187,7 +198,7 @@ nav ul li a:hover {
   .menu-toggle {
     display: block;
     right: 20px;
-    margin-right: 10px; /* Adjust margin for spacing */
+    margin-right: 10px;
   }
 
   nav ul li:hover {
@@ -196,5 +207,20 @@ nav ul li a:hover {
 
   nav ul li:hover::after {
     height: 1px;
+  }
+  #navcontact {
+    width: 50%;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+
+  }
+
+  .nav-items {
+    width: 40%; /* Adjust width for smaller screens */
+  }
+
+  .nav-items li:last-child {
+    margin-bottom: 25px; /* Ensure space below the contact button */
   }
 }

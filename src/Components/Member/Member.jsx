@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Navbar from '../../Components/Navbar/Navbar';
 import './Member.css';
 import Title from '../../Title/Title';

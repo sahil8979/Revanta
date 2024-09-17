@@ -1,8 +1,7 @@
 // src/Hero.jsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-scroll'; // Import Link from react-scroll
 import './Hero.css';
-
-
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,9 +45,16 @@ const Hero = () => {
           />
         ))}
       </div>
-      <button className="btns">Explore more</button>
+      <Link 
+        to="about-section"  // Target section id
+        smooth={true} 
+        offset={20}  // Offset to account for fixed headers
+        duration={500}  // Duration of the scroll
+        className="btns"
+      >
+        Explore more
+      </Link>
     </div>
-   
   );
 };
 

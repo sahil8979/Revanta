@@ -51,11 +51,12 @@
   }
   
   /* Styling for Paragraph */
-  p {
-    text-align: center;
-    line-height: 1.6;
+  .Team-Journey p, .Vision p, .Get-Involved p{
+    margin-bottom: 1em;
+    text-align: left;
+    font-weight: 450;
+    font-size: 1.1rem;
   }
-  
   /* About Section Styles */
   .about {
     margin: 50px auto; /* Center the section horizontally */
@@ -67,6 +68,13 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 90%; /* Set max-width to a percentage for responsiveness */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .about:hover{
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    
+    border: 2px solid black;
   }
   
   .about-content {
