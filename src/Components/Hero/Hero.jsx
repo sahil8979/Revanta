@@ -48,7 +48,7 @@ const Hero = () => {
       <Link 
         to="about-section"  // Target section id
         smooth={true} 
-        offset={20}  // Offset to account for fixed headers
+        offset={10}  // Offset to account for fixed headers
         duration={500}  // Duration of the scroll
         className="btns"
       >
