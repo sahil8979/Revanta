@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+  
+/* Heading text and description */
+.heading-text {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+  
+.first-text {
+    margin-top: -30px;
+}
+  
+/* Full-width line after the quote */
+.quote-line-full {
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-top: 2px solid green;
+    background-color: white;
+}
+  
+/* Year Heading */
+.year-heading {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+    color: #000f38;
+}
+  
+/* Horizontal line under year heading */
+.year-line {
+    width: 20%;
+    margin: 10px auto;
+    border: none;
+    border-top: 3px solid green;
+}
+  
+/* Cards container */
+.member-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+  
+/* Individual member card */
+.member-card {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+.member-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+  
+/* Profile image container */
+.image-container {
+    position: relative;
+}
+  
+/* Profile image styling */
+.profile-img {
+    width: 240px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: -5px;
+    border-radius: 10px;
+}
+  
+/* Social icons (LinkedIn, Instagram) below the image */
+.social-icons {
+    position: absolute;
+    bottom: 5px; /* Adjusted to make sure it stays within the image container */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    width: 70px;
+    background: #1c1c1c;
+    
+    justify-content: center;
+}
+  
+.social-icons a {
+    color: white;
+    font-size: 25px; /* Slightly bigger for better visibility */
+    transition: color 0.3s;
+    
+}
+  
+.social-icons a:hover {
+    color: #0077b5; /* LinkedIn blue or change to custom color */
+}
+  
+/* Role text styling */
+.member-card h3 {
+    margin-top: 35px;
+    font-size: 1.1em;
+}
+
+.member-card p {
+    font-weight: bold;
+    margin-top: 5px;
+}

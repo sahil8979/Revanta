@@ -9,16 +9,20 @@
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 90%;
     text-align: center;
     position: relative;
+    border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .Team-Journey:hover, .Vision:hover, .Get-Involved:hover{
     transform: scale(1.05); /* Slightly scale up on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    
+    border: 2px solid black;
+    
   }
   
   /* Title Section */
