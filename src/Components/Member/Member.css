@@ -37,7 +37,7 @@ body {
   
 /* Horizontal line under year heading */
 .year-line {
-    width: 20%;
+    width: 15%;
     margin: 10px auto;
     border: none;
     border-top: 3px solid green;
@@ -117,4 +117,9 @@ body {
 .member-card p {
     font-weight: bold;
     margin-top: 5px;
+}
+@media (max-width: 1000px){
+    .year-line{
+        width: 42%;
+    }
 }
