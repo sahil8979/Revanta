@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-div {
+    margin-top: 4.2rem;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000f38;
+    margin-bottom: 20px;
+}
+  
+.contact {
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#icon {
+    color: #008000;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: black;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Keep original form and map styling intact */
+.contact form input, 
+.contact form textarea {
+    display: block;
+    width: 100%;
+    background: #00800025;
+    padding: 15px;
+    font-size: 1rem;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+}
+
+.contact form button {
+    background-color: #008000;
+    color: #fff;
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-col span {
+    display: block;
+    margin: 20px 0;
+}
+
+/* Box Shadow for Swapnil and Aman */
+.contact-box {
+    box-shadow: 0 0 10px rgba(58, 228, 58, 0.5); /* Box-shadow added */
+}
+
+/* Text Alignment for Swapnil and Aman */
+.contact-col p {
+    text-align: left; /* Ensure text is left-aligned */
+    margin-left: 20px; /* Same left alignment for all text */
+}
+
+.text {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Media Query for small screens */
+@media (max-width: 700px) {
+    .contact {
+        display: block;
+    }
+    .contact-col {
+        padding: 20px;
+        margin-bottom: 20px; /* Add space between the two divs */
+    }
+    .contact-col p {
+        margin-left: 0; /* Reset margin on small screens */
+    }
+}

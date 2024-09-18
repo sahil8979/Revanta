@@ -8,6 +8,7 @@ import Readmore from './Readmore/Readmore';
 import Member from './Components/Member/Member';
 import ScrollToTop from './ScrollToTop';
 import Gallery from './Components/Gallery/Gallery';
+import ContactUs from './Components/Contact/Contact';
 
 const App = () => {
   return (
@@ -19,14 +20,14 @@ const App = () => {
           <Route path="/" element={
             <>
               <Hero />
-              <Title subTitle="Welcome To " title="Team Revanta" />
+             
               <About />
             </>
           } />
           <Route path="/home" element={
             <>
               <Hero />
-              <Title subTitle="About" title="Team Revanta" />
+              <Title subTitle="Welcome To " title="Team Revanta" />
               <About />
             </>
           } />
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/readmore" element={<Readmore />} />
           <Route path="/member" element={<Member />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </div>
     </Router>

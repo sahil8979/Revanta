@@ -73,10 +73,11 @@ html, body {
 .overlay h1 {
     font-size: 6rem; /* Adjust font size as needed */
     margin: 0;
+    color: white;
     font-weight: bold;
     font-family: "Jersey 25", sans-serif;
     letter-spacing: 5px;
-    text-shadow: 4px 4px 7px black;
+    text-shadow: 6px 6px 10px black;
 }
 
 .dots {

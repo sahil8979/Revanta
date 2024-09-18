@@ -17,18 +17,22 @@ const Navbar = () => {
   return (
     <nav className='container' id='nav'>
       <img src={logo} alt="logoimage" className='logo' />
-      <button className='menu-toggle' onClick={toggleMenu}>
-        ☰
+      <button className={`menu-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </button>
-      <ul className={isMenuOpen ? 'nav-items open' : 'nav-items'}>
-        <li onClick={closeMenu}><Link to="/home">Home</Link></li>
-        <li onClick={closeMenu}><Link to="/about">About</Link></li>
-        <li onClick={closeMenu} className='nav-item'><Link to="/member">Members</Link></li>
-        <li onClick={closeMenu}><Link to="/gallery">Gallery</Link></li>
-        <li onClick={closeMenu}>Achievements</li>
-        <li onClick={closeMenu}>Sponsors</li>
-        <li className='btn' id='navcontact' onClick={closeMenu}>Contact Us</li>
-      </ul>
+      <div className={isMenuOpen ? 'nav-overlay open' : 'nav-overlay'} onClick={closeMenu}>
+        <ul className='nav-items'>
+          <li onClick={closeMenu}><Link to="/home">Home</Link></li>
+          <li onClick={closeMenu}><Link to="/about">About</Link></li>
+          <li onClick={closeMenu}><Link to="/member">Members</Link></li>
+          <li onClick={closeMenu}><Link to="/gallery">Gallery</Link></li>
+          <li onClick={closeMenu}>Achievements</li>
+          <li onClick={closeMenu}>Sponsors</li>
+          <li className='btn' id='navcontact' onClick={closeMenu}><Link to="/contact">Contact us</Link></li>
+        </ul>
+      </div>
     </nav>
   );
 };
