@@ -27,10 +27,7 @@ const Hero = () => {
     <div className="hero-container">
       <div className="hero" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {imageClasses.map((imageClass, index) => (
-          <div
-            key={index}
-            className={`hero-slide ${imageClass}`}
-          />
+          <div key={index} className={`hero-slide ${imageClass}`} />
         ))}
       </div>
       <div className="overlay">
@@ -46,9 +43,9 @@ const Hero = () => {
         ))}
       </div>
       <Link 
-        to="about-section"  // Target section id
+        to="title-section"  // The id of the section you want to scroll to
         smooth={true} 
-        offset={10}  // Offset to account for fixed headers
+        offset={-90}  // Offset to adjust for fixed headers if any
         duration={500}  // Duration of the scroll
         className="btns"
       >

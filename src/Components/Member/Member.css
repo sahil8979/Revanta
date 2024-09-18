@@ -21,7 +21,7 @@ body {
 p{
     font-weight: bold;
     text-shadow: #0077b5;
-    font-size:20px ;
+    font-size:18px ;
 }
   
 /* Full-width line after the quote */
@@ -127,5 +127,8 @@ p{
 @media (max-width: 1000px){
     .year-line{
         width: 42%;
+    }
+    p{
+        font-size:16px ;
     }
 }

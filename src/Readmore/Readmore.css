@@ -52,10 +52,12 @@
   
   /* Styling for Paragraph */
   .Team-Journey p, .Vision p, .Get-Involved p{
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
     text-align: left;
-    font-weight: 450;
+    font-weight: 400;
     font-size: 1.1rem;
+    line-height: 1.6;
+    margin-left: 15px;
   }
   /* About Section Styles */
   .about {
