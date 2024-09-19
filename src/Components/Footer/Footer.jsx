@@ -57,7 +57,7 @@ const Footer = () => {
       <div className='footerBottom'>
         <p id="rights">© All Rights Reserved By Team Revanta, NIT Hamirpur</p>
         <div className='designby'>
-        <p className='design'>Designed By: <a href="https://github.com">Mohammad Sahil</a><span className='t'> & </span> <a href="https://github.com">Naman Srivastava</a></p>
+        <p className='design'>Designed By: <a href="https://www.linkedin.com/in/mohammad-sahil-386161289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Mohammad Sahil</a>{/*<span className='t'> & </span> <a href="https://github.com">Naman Srivastava</a> */}</p>
       </div>
       </div>
     </footer>
