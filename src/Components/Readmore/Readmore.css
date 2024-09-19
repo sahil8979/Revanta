@@ -16,6 +16,9 @@
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .welcome-text{
+    text-align: justify;
+  }
   
   .Team-Journey:hover, .Vision:hover, .Get-Involved:hover{
     transform: scale(1.05); /* Slightly scale up on hover */

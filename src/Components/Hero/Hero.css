@@ -183,8 +183,10 @@ html, body {
 @media (max-width: 900px) {
     .hero-container {
         width: 100vw;
+        border-radius: 0px;
         height: auto; /* Adjust height to auto */
         aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+        
     }
 
     .overlay h1 {
@@ -217,6 +219,7 @@ html, body {
         padding: 6px 14px;
         font-size: 9px;
     }
+
 }
 
 /* For screens 550px and below */
@@ -224,7 +227,9 @@ html, body {
     .overlay {
         top: 35%; /* Adjust top position */
     }
-
+      .hero-container{
+        border-radius: 0px;
+      }
     .overlay h1 {
         font-size: 2.5rem; /* Adjust font size */
         margin-bottom: 10px; /* Add margin to maintain gap */

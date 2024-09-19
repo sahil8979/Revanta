@@ -22,7 +22,8 @@ const Navbar = () => {
         <span className="bar"></span>
         <span className="bar"></span>
       </button>
-      <div className={isMenuOpen ? 'nav-overlay open' : 'nav-overlay'} onClick={closeMenu}>
+      {/* Menu toggle button logic for opening the nav overlay */}
+      <div className={`nav-overlay ${isMenuOpen ? 'open' : ''}`} onClick={closeMenu}>
         <ul className='nav-items'>
           <li onClick={closeMenu}><Link to="/home">Home</Link></li>
           <li onClick={closeMenu}><Link to="/about">About</Link></li>

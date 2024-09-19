@@ -1,7 +1,6 @@
 /* Basic styles */
 * {
   font-family: 'Poppins', sans-serif;
-
 }
 
 nav {
@@ -97,7 +96,7 @@ nav ul li a {
 
 /* Cross sign when menu is opened */
 .menu-toggle.open .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 6px);
+  transform: rotate(765deg) translate(5px, 6px);
 }
 
 .menu-toggle.open .bar:nth-child(2) {
@@ -105,7 +104,7 @@ nav ul li a {
 }
 
 .menu-toggle.open .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-765deg) translate(8px, -10px);
 }
 
 /* Styles for small screens */
@@ -113,17 +112,21 @@ nav ul li a {
   .menu-toggle {
     display: flex;
   }
+
   .logo {
     width: 110px;
     margin-top: 15px;
-   
   }
+
   .nav-overlay {
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
 
   .nav-overlay.open {
     display: flex;
+    opacity: 1;
     position: fixed;
     top: 0;
     left: 0;

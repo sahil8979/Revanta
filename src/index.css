@@ -11,6 +11,22 @@ body {
  /* background-image: url("./assets/backgroundimg2.jpeg");*/
  background-color: #FFF;
 }
+/* App Container to handle the layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the footer is at the bottom */
+}
+
+.content-wrapper {
+  flex: 1; /* Takes up available space pushing the footer down */
+  padding-bottom: 20px; /* Adds spacing between content and footer */
+}
+
+/* Footer Styling for Proper Bottom Positioning */
+footer {
+  margin-top: 20px;
+}
 
 .container {
   padding-left: 3%;

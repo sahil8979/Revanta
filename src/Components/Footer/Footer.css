@@ -1,0 +1,246 @@
+.footer {
+    background-color: #252525;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative; /* Added for positioning child elements */
+  }
+  
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sectionWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .section {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .teamHeading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .revanta {
+    color: #32CD32; /* Accent color */
+  }
+  
+  .sectionHeading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
+    
+  }
+  
+  .linksList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linksList li {
+    margin: 5px 0;
+  }
+  
+  .linksList a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s, transform 0.3s ease; /* Fixed typo in 'transform' */
+    font-size: 13px;
+  }
+  
+  .linksList a:hover {
+    color: white;
+    font-weight: bold;
+    transform: scale(1.5);
+    font-size: 16px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .socialIcon {
+    background-color: #32CD32;
+    padding: 10px;
+    margin-top: 10;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .socialIcon:hover {
+    background-color: #2E8B2D;
+  }
+  
+  .contactSection {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+    color: #32CD32;
+  }
+  
+  .footerBottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    position: relative; /* Added for positioning child elements */
+  }
+  
+  .footerBottom #rights {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .footerBottom .designby {
+    position: absolute; /* Absolute positioning */
+    left: 20px; /* Space from the left */
+    font-size: 10px;
+    color: white;
+  }
+  
+  .design {
+    font-size: 13px;
+  }
+  
+  .section-text {
+    font-weight: 350;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+  }
+  
+  .designby a {
+    color: #2E8B2D;
+    text-decoration: none;
+  }
+  
+  .designby a:hover {
+    color: #32CD32;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .footerContent {
+      padding: 20px;
+    }
+  
+    .sectionWrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .section {
+      min-width: 100%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .sectionHeading {
+      font-size: 1.1rem;
+    }
+  
+    .contactSection {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contactItem {
+      margin-bottom: 10px;
+    }
+  
+    .socialIcons {
+      gap: 20px; /* Increased gap for better spacing */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sectionWrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sectionHeading {
+      font-size: 1rem;
+      margin: auto;
+    }
+  
+    .contactSection {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footerBottom {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .footerBottom .designby {
+      position: static; /* Reset positioning on small screens */
+      text-align: center; /* Center align on smaller screens */
+      font-size: 0.7rem; /* Slightly smaller font size */
+      padding: 0; /* Remove padding on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .teamHeading {
+      font-size: 1.5rem;
+    }
+  
+    .linksList a {
+      font-size: 12px;
+    }
+  
+    .socialIcon {
+      font-size: 1.2rem;
+      padding: 8px;
+    }
+  
+    .icon {
+      font-size: 1rem;
+    }
+  
+    .section-text {
+      font-size: 0.8rem;
+    }
+  
+    .socialIcons {
+      gap: 25px; /* Further increased gap for extra small screens */
+    }
+  }
+  

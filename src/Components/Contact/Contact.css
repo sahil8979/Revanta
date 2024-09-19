@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -7,15 +8,19 @@ body {
     margin-top: 4.2rem;
 }
 
+.title-divs {
+    margin-top: 2rem;
+}
+
 .contact-heading {
     text-align: center;
     font-size: 1.5rem;
     color: #000f38;
     margin-bottom: 20px;
 }
-  
+
 .contact {
-    margin: 80px auto;
+    margin: 20px auto;
     max-width: 90%;
     display: flex;
     justify-content: space-between;
@@ -25,6 +30,7 @@ body {
 
 #icon {
     color: #008000;
+    margin-right: 5px; /* Adjust spacing between icon and text */
 }
 
 .contact-col {
@@ -33,9 +39,52 @@ body {
     box-sizing: border-box;
     padding: 20px;
     background-color: white;
+    position: relative;
 }
 
-/* Keep original form and map styling intact */
+/* New photo-container styling */
+.photo-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Align photo and text in the same row */
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+/* Ensure no gap between email and phone number */
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; /* No space between email and phone */
+    margin-top: 0; /* No space on top either */
+    line-height: 1.4; /* Adjust line height if necessary */
+}
+
+.text {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+/* Form and map styling */
 .contact form input, 
 .contact form textarea {
     display: block;
@@ -74,18 +123,6 @@ body {
     box-shadow: 0 0 10px rgba(58, 228, 58, 0.5); /* Box-shadow added */
 }
 
-/* Text Alignment for Swapnil and Aman */
-.contact-col p {
-    text-align: left; /* Ensure text is left-aligned */
-    margin-left: 20px; /* Same left alignment for all text */
-}
-
-.text {
-    font-size: 1.3rem;
-    display: block;
-    margin-bottom: 10px;
-}
-
 /* Media Query for small screens */
 @media (max-width: 700px) {
     .contact {
@@ -95,7 +132,15 @@ body {
         padding: 20px;
         margin-bottom: 20px; /* Add space between the two divs */
     }
-    .contact-col p {
-        margin-left: 0; /* Reset margin on small screens */
+    .photo-container {
+        width: 80px;
+        height: 80px;
+    }
+    .contact-info {
+        flex-direction: column; /* Stack photo and text vertically */
+    }
+    .contact-info-item {
+        flex-direction: column; /* Stack icon and text vertically */
+        align-items: flex-start;
     }
 }

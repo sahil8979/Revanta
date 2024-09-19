@@ -1,7 +1,9 @@
 import React from 'react';
 import './Contact.css';
-import Title from '../../Title/Title';
+import Title from '../Title/Title';
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
+import Swapnil from '../../assets/Swapnil.jpg';
+import Aman from '../../assets/aman.jpg'; // Import Aman’s photo
 
 const Contact = () => {
 
@@ -61,26 +63,44 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Heading outside and Swapnil and Aman Information */}
-      <div className="title-div">
-        <Title subTitle="For any Queries" title="Contact Us" />
+      {/* Heading and Contact Information */}
+      <div className="title-divs">
+        <Title subTitle="For any Queries" title="Contact" />
       </div>
       
       <div className="contact">
-        <div className="contact-col contact-box"> {/* Added class for box-shadow */}
-          <p>
-            <strong className='text'>Swapnil</strong><br />
-            <FaEnvelope id='icon' /> swapnil@example.com<br />
-            <FaPhone id='icon' /> +91 8252486093
-          </p>
+        <div className="contact-col contact-box">
+          <div className="contact-info">
+            <div className="photo-container">
+              <img src={Swapnil} alt="Swapnil" />
+            </div>
+            <p>
+              <strong className='text'>Swapnil</strong><br />
+              <span className="contact-info-item">
+                <FaEnvelope id='icon' /> swapnil@example.com
+              </span>
+              <span className="contact-info-item">
+                <FaPhone id='icon' /> +91 8252486093
+              </span>
+            </p>
+          </div>
         </div>
 
-        <div className="contact-col contact-box"> {/* Added class for box-shadow */}
-          <p>
-            <strong className='text'>Aman Upadhyay</strong><br />
-            <FaEnvelope id='icon' /> aman@example.com<br />
-            <FaPhone id='icon' /> +91 9284219815
-          </p>
+        <div className="contact-col contact-box">
+          <div className="contact-info">
+            <div className="photo-container">
+              <img src={Aman} alt="Aman Upadhyay" />
+            </div>
+            <p>
+              <strong className='text'>Aman Upadhyay</strong><br />
+              <span className="contact-info-item">
+                <FaEnvelope id='icon' /> aman@example.com
+              </span>
+              <span className="contact-info-item">
+                <FaPhone id='icon' /> +91 9284219815
+              </span>
+            </p>
+          </div>
         </div>
       </div>
     </div>

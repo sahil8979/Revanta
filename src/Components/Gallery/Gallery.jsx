@@ -1,6 +1,6 @@
 
 import './Gallery.css';
-import Title from '../../Title/Title';
+import Title from '../Title/Title';
 import img1 from '../../assets/hero3.jpg'
 
 const Gallery = () => {
