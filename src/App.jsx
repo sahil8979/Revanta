@@ -10,7 +10,6 @@ import Gallery from './Components/Gallery/Gallery';
 import ContactUs from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 
-
 const App = () => {
   return (
     <Router>
@@ -19,10 +18,17 @@ const App = () => {
         <Navbar />
         <div className="content-wrapper">
           <Routes>
-            <Route path="/home" element={
+            <Route path="/" element={
               <>
                 <Hero />
                 <Title subTitle="We Are" title="Team Revanta" />
+                <About />
+              </>
+            } />
+            <Route path="/home" element={
+              <>
+                <Hero />
+                <Title subTitle="About" title="Team Revanta" />
                 <About />
               </>
             } />
