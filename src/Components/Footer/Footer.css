@@ -105,7 +105,12 @@
     align-items: center;
     gap: 10px;
   }
-  
+  .contactItem  a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+   
   .icon {
     font-size: 1.2rem;
     color: #32CD32;
@@ -158,56 +163,119 @@
     .footerContent {
       padding: 20px;
     }
+    
+    .teamHeading {
+      font-size: 1.8rem; /* Slightly reduce font size */
+    }
+    
+    .sectionHeading {
+      font-size: 1.1rem; /* Reduce font size */
+    }
   
     .sectionWrapper {
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row; /* Keep layout similar to desktop */
+      justify-content: space-between; /* Maintain space between sections */
     }
   
     .section {
-      min-width: 100%;
+      min-width: 45%; /* Reduce section width to fit the layout */
+      margin-bottom: 20px; /* Add some margin between sections */
+    }
+  
+    .socialIcon {
+      font-size: 1.4rem; /* Slightly reduce icon size */
+      padding: 8px;
+    }
+  
+    .footerBottom {
+      font-size: 0.85rem; /* Reduce the font size in footer */
     }
   }
   
+  /* For screens up to 992px */
   @media (max-width: 992px) {
+    .teamHeading {
+      font-size: 1.6rem; /* Reduce font size further */
+    }
+  
     .sectionHeading {
-      font-size: 1.1rem;
+      font-size: 1rem; /* Further reduce heading font size */
     }
   
-    .contactSection {
-      flex-direction: column;
-      align-items: center;
+    .sectionWrapper {
+      flex-direction: row; /* Maintain row layout */
+      flex-wrap: wrap; /* Allow wrapping */
+      justify-content: space-between; /* Space out the sections */
     }
   
-    .contactItem {
-      margin-bottom: 10px;
+    .section {
+      flex: 1;
+      min-width: 48%; /* Adjust the section width */
+      margin-bottom: 20px;
+    }
+  
+    .socialIcon {
+      font-size: 1.3rem; /* Adjust icon size */
+      padding: 8px;
     }
   
     .socialIcons {
-      gap: 20px; /* Increased gap for better spacing */
+      gap: 15px; /* Keep space between social icons */
+    }
+  
+    .contactSection {
+      flex-direction: row; /* Maintain row layout */
+      justify-content: space-around; /* Keep contact items spaced */
+    }
+  
+    .footerBottom {
+      font-size: 0.8rem; /* Reduce footer font size */
     }
   }
-  
+
   @media (max-width: 768px) {
     .sectionWrapper {
       flex-direction: column;
       align-items: center;
     }
-  
+    .socialIcon + span {
+      margin-left: 10px; /* Space between social icon and text */
+      
+    }
+    .socialIcon{
+      margin-top: 20px;
+    }
     .sectionHeading {
       font-size: 1rem;
       margin: auto;
+      text-align: center; /* Center headings */
+    }
+   
+    .contactItem {
+      display: flex;
+      align-items: flex-start;
+      justify-content:safe; /* Centers the icons and text */
+      gap: 10px; /* Keeps space between icon and text */
+      max-width: 300px; /* Ensures a fixed width so items don't stretch too wide */
+      width: 100%; /* Ensures alignment in the center */
+  }
+   .linksList {
+      text-align: center; /* Center the list */
     }
   
     .contactSection {
+      display: flex;
       flex-direction: column;
-      align-items: center;
-    }
+      align-items: center; /* Ensures the whole section is centered */
+      text-align: center; /* Centers the text content */
+      gap: 10px; /* Adds space between each item */
+  }
   
     .footerBottom {
       padding: 10px;
       text-align: center;
     }
+    
   
     .footerBottom .designby {
       position: static; /* Reset positioning on small screens */
@@ -226,9 +294,21 @@
       font-size: 12px;
     }
   
+    .socialIcons {
+      gap: 25px; /* Increased gap for extra small screens */
+      justify-content: center; /* Center icons */
+    }
+  
     .socialIcon {
       font-size: 1.2rem;
       padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .socialIcon + span {
+      margin-left: 20px; /* Added space between social icon and text */
     }
   
     .icon {
@@ -237,10 +317,12 @@
   
     .section-text {
       font-size: 0.8rem;
+      text-align: justify; /* Center the text */
     }
   
-    .socialIcons {
-      gap: 25px; /* Further increased gap for extra small screens */
+    .contactSection {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   }
-  

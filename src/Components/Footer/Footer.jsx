@@ -1,5 +1,5 @@
 import './Footer.css'; // Ensure the correct path
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 
 const Footer = () => {
@@ -12,21 +12,20 @@ const Footer = () => {
           <div className='section'>
             <h3 className='sectionHeading'>Explore Us</h3>
             <ul className='linksList'>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#achievements">Achievements</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="/home">Home</a></li>
+              <li><a href="/member">Member</a></li>
+              <li><a href="/achiement">Achievements</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
 
           <div className='section'>
             <h3 className='sectionHeading'>Social Media</h3>
             <div className='socialIcons'>
-              <a href="https://facebook.com" className='socialIcon'><FaFacebookF /></a>
-              <a href="https://www.linkedin.com/company/revanta-motorsports-club-nit-hamirpur/" className='socialIcon'><FaLinkedinIn /></a>
-              <a href="https://www.instagram.com/team_revanta?igsh=cDFiOXR1NWg3OWl6" className='socialIcon'><FaInstagram /></a>
-              <a href="https://youtube.com/@teamrevantanith6422?si=PQTSgZWml517EKAh" className='socialIcon'><FaYoutube /></a>
+              <a href="https://www.linkedin.com/company/revanta-motorsports-club-nit-hamirpur/" target="_blank" className='socialIcon'><FaLinkedinIn /></a>
+              <a href="https://www.instagram.com/team_revanta?igsh=cDFiOXR1NWg3OWl6" target="_blank"  className='socialIcon'><FaInstagram /></a>
+              <a href="https://youtube.com/@teamrevantanith6422?si=PQTSgZWml517EKAh"  target="_blank" className='socialIcon'><FaYoutube /></a>
             </div>
           </div>
 
@@ -38,18 +37,22 @@ const Footer = () => {
 
         <div className='contactSection'>
           <div className='contactItem'>
-            <FaMapMarkerAlt className='icon' />
+          <a href='https://maps.app.goo.gl/rGkirKg5PzSJTfwx8' target="_blank" rel="noopener noreferrer">  <FaMapMarkerAlt className='icon' /></a>
             <span>NIT Hamirpur</span>
           </div>
           
           <div className='contactItem'>
-            <FaPhoneAlt className='icon' />
-            <span>+91 9155360718</span>
+           <a href="tel:+919284219815"> <FaPhoneAlt className='icon' /></a>
+            <span>+91 9284219815</span>
+          </div>
+          <div className='contactItem'>
+          <a href="tel:+918252486093">  <FaPhoneAlt className='icon' /> </a>
+            <span>+91 8252486093</span>
           </div>
 
           <div className='contactItem'>
-            <FaEnvelope className='icon' />
-            <span>revanta@nith.ac.in</span>
+           <a href='mailto:revanta@nith.ac.in' target='_blank'> <FaEnvelope className='icon' /> </a>
+            <span>revanta@nith.ac.in</span> 
           </div>
         </div>
       </div>
