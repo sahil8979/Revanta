@@ -6,7 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
  /* background-image: url("./assets/backgroundimg2.jpeg");*/
  background-color: #FFF;
@@ -21,6 +20,12 @@ body {
 .content-wrapper {
   flex: 1; /* Takes up available space pushing the footer down */
   padding-bottom: 20px; /* Adds spacing between content and footer */
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+ 
+.content-wrapper.fade-in {
+  opacity: 1;
 }
 
 /* Footer Styling for Proper Bottom Positioning */
@@ -102,5 +107,10 @@ footer {
   .btn {
     padding: 6px 15px;
     font-size: 9px;
+  }
+}
+@keyframes fadeIn {
+  to {
+      opacity: 1;
   }
 }

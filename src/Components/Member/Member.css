@@ -21,6 +21,7 @@ body {
 
 .first-text {
     margin-top: -30px;
+    color: black
     
 }
 p{
@@ -88,9 +89,9 @@ p{
 /* Profile image styling */
 .profile-img {
     width: 240px;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
-    margin-bottom: -5px;
+    margin-bottom: -10px;
     border-radius: 10px;
 }
   
@@ -115,8 +116,8 @@ p{
     
 }
 .domain{
-    font-size: 0.95rem;
-    font-weight: 100;
+    font-size: 1rem;
+    font-weight: 300;
 }
   
 .social-icons a:hover {
@@ -126,11 +127,11 @@ p{
 /* Role text styling */
 .member-card h3 {
     margin-top: 35px;
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 
 .member-card p {
-    font-weight: bold;
+    font-weight: 300;
     margin-top: 5px;
 }
 @media (max-width: 1000px){
