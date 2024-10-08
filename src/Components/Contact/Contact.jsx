@@ -77,10 +77,10 @@ const Contact = () => {
             <p>
               <strong className='text'>Swapnil</strong><br />
               <span className="contact-info-item">
-                <FaEnvelope id='icon' /> swapnil@example.com
+                <FaEnvelope id='icon' href="mailto:swapnil@example.com"/> swapnil@example.com
               </span>
               <span className="contact-info-item">
-                <FaPhone id='icon' /> +91 8252486093
+                <FaPhone id='icon' href="tel:+918252486093" /> +91 8252486093
               </span>
             </p>
           </div>
@@ -94,10 +94,10 @@ const Contact = () => {
             <p>
               <strong className='text'>Aman Upadhyay</strong><br />
               <span className="contact-info-item">
-                <FaEnvelope id='icon' /> aman@example.com
+                <FaEnvelope id='icon' href="mailto:aman@example.com" /> aman@example.com
               </span>
-              <span className="contact-info-item">
-                <FaPhone id='icon' /> +91 9284219815
+              <span className="contact-info-item" >
+                <FaPhone id='icon' href="tel:+919284219815" /> +91 9284219815
               </span>
             </p>
           </div>

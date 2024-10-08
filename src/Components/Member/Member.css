@@ -29,6 +29,9 @@ p{
     text-shadow: #0077b5;
     font-size:18px ;
 }
+#piyush{
+    height: fit-content;
+}
   
 /* Full-width line after the quote */
 .quote-line-full {

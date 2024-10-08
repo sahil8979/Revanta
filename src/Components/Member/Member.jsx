@@ -22,11 +22,12 @@ import KrishanPuniya from '../../assets/KRISHAN PUNIYA.jpg'
 import RiteshSharma from '../../assets/RITESH SHARMA.png'
 import ShabiThakur from '../../assets/SHABI THAKUR.jpg'
 import AyushDixit from '../../assets/AYUSH DIXIT.jpg'
-{/*import from '../../assets'
-import from '../../assets'
-import from '../../assets'
-import from '../../assets'
-import from '../../assets'
+import Amanu from '../../assets/FB2024 - Aman Upadhyay.png'
+import PiyushKeshari from '../../assets/IMG_20231220_184752 (1) - Piyush Keshri.jpg'
+ import jayant from '../../assets/IMG_20241008_200100 - Jayant Rajput.jpg'
+ import Harish from '../../assets/IMG-20240922-WA0000(1) - Harish Jha.jpg'
+ import Priyanshu from '../../assets/priyanshu .jpg'
+{/* import Chirayu from '../../assets/Photo from Chirayu - CHIRAYU PANDEY.jpg'
 import from '../../assets'*/}
 
 
@@ -44,7 +45,7 @@ const Member = () => {
         <hr className="quote-line-full" />
       </div>
       
-      {/* Final Year Section */}
+      {/*-------------------------------------------------------------- Final Year Section ------------------------------------------------------*/}
       <h1 className="year-heading">FINAL YEAR</h1>
       <hr className="year-line" />
       <div className="member-cards">
@@ -54,7 +55,7 @@ const Member = () => {
           <div className="image-container">
             <img src={MohitSingh} alt="Member 1" className="profile-img" />
             <div className="social-icons">
-              <a href="https://www.linkedin.com/in/mohit-singh-b75513245" target="_blank" rel="noopener noreferrer">
+              <a href="#" rel="noopener noreferrer">
                 <i className="fab fa-linkedin"></i>
               </a>
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
@@ -65,6 +66,42 @@ const Member = () => {
           <h3>Mohit Singh</h3>
           <p>Powertrain Domain</p>
         </div>
+
+         {/* Jayant  */}
+         <div className="member-card">
+          <div className="image-container">
+            <img src={jayant} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/jayant-rajput-720471239/" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/jayantrajput._?igsh=MTdnMzRwZTllcGtyeA==" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Jayant Rajput </h3>
+          <p> Management Domain</p>
+        </div>
+
+
+          {/* Harish Kumar  */}
+        <div className="member-card">
+          <div className="image-container">
+            <img src={Harish} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/harish-kumar-9a73031a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/harish.jha__/profilecard/?igsh=eTZqZnVrdWszcGRv" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Harish Kumar </h3>
+          <p>Suspension Domain</p>
+        </div>
+
 
         </div>
 
@@ -81,7 +118,7 @@ const Member = () => {
               <a href="http://linkedin.com/in/swapnil-41a845233" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <a href="#" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
@@ -108,8 +145,47 @@ const Member = () => {
           <p>Chassis Head</p>
           <p className='domain'>Chassis Domain</p>
         </div>
+
+            {/* Aman Upadhyay */}
+        <div className="member-card">
+          <div className="image-container">
+            <img src={Amanu} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/aman-upadhyay-2ba44024b/" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/awishonaneyelash/" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Aman Upadhyay</h3>
+          <p>Steering Head</p>
+          <p className='domain'>Steering Domain</p>
+        </div>
+         
+         
+        {/* Piyush Keshari  */}
+        <div className="member-card">
+          <div className="image-container">
+            <img id ="piyush" src={PiyushKeshari} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/piyush-keshri-22156025a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/piyushkeshri442?igsh=eHZ0bDlvdHZ6ZWVm" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Piyush Keshri</h3>
+          <p>Suspension Head</p>
+          <p className='domain'>Suspension Domain</p>
+        </div>
+        
+
        </div>
-       {/* Second  Year Section */}
+       {/* ---------------------------------------------------Second  Year Section -----------------------------------------------------*/}
 
        <h1 className="year-heading">SECOND YEAR</h1>
       <hr className="year-line" />
@@ -197,6 +273,24 @@ const Member = () => {
           <h3>Divyanshu Sharma</h3>
           <p>Powertrain Domain</p>
         </div>
+
+        {/*Priyanshu */}
+        <div className="member-card">
+          <div className="image-container">
+            <img src={Priyanshu} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/priyanshu-chaudhary-009802278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/priyanshupc.8755/profilecard/?igsh=eDM3OGx3OThueHpo" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Priyanshu Chaudhary</h3>
+          <p>Domain</p>
+        </div>
+
         {/*Ajay Chaudhary */}
         
         <div className="member-card">
@@ -379,7 +473,24 @@ const Member = () => {
           <h3>Vishal Vaishnav </h3>
           <p>Chasis Domain</p>
        </div>
-
+{/* Chirayu Lauda */}
+       {/*
+       <div className="member-card">
+          <div className="image-container">
+            <img src={Chirayu} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/chirayu-pandey-23bme033?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Chirayu Pandey </h3>
+          <p>Powertrain & Braking Domain</p>
+       </div>
+       */}
 
         </div>
       

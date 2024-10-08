@@ -1,5 +1,6 @@
 import './Footer.css'; // Ensure the correct path
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
+import nitlogo from '../../assets/nitlogo.png'
 
 
 const Footer = () => {
@@ -30,8 +31,9 @@ const Footer = () => {
           </div>
 
           <div className='section'>
-            <h3 className='sectionHeading'>NIT Hamirpur</h3>
-            <p className='section-text'>National Institute of Technology Hamirpur (NIT Hamirpur or NITH) is a public technical university located in Hamirpur, Himachal Pradesh, India. It was declared to be an Institute of National Importance by the Government of India under the Institutes of Technology Act.</p>
+            <div className='nit'>
+          <img  id="nitlogo" src={nitlogo} />
+          </div>
           </div>
         </div>
 
