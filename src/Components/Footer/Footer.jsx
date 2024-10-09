@@ -32,7 +32,7 @@ const Footer = () => {
 
           <div className='section'>
             <div className='nit'>
-         <a href="https://www.nith.ac.in/" target='_blank'> <img  id="nitlogo" src={nitlogo} /> </a>
+         <a href="https://www.nith.ac.in/" target="_blank"> <img  id="nitlogo" src={nitlogo} /> </a>
           </div>
           </div>
         </div>
