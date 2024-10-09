@@ -34,7 +34,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="title-div">
+      <div className="contact-div">
         <Title subTitle="Contact" title="Get In Touch" />
       </div>
       <div className='contact'>
@@ -64,7 +64,7 @@ const Contact = () => {
       </div>
 
       {/* Heading and Contact Information */}
-      <div className="title-divs">
+      <div className="contact-divs">
         <Title subTitle="For any Queries" title="Contact" />
       </div>
       
