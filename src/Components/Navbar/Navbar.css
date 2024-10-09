@@ -31,6 +31,24 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+.btn {
+  background: #FFF;
+  color: #212121;
+  padding: 14px 25px;
+  font-size: 13px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  color: #212121;
+}
+
 
 nav ul li {
   display: inline-block;
@@ -111,6 +129,10 @@ nav ul li a {
 @media (max-width: 1000px) {
   .menu-toggle {
     display: flex;
+  }
+  .btn {
+    padding: 12px 22px;
+    font-size: 12px;
   }
 
   .logo {
