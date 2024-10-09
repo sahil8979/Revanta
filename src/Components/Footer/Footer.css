@@ -244,7 +244,7 @@
     .footerBottom {
       font-size: 0.8rem; /* Reduce footer font size */
     }
-   
+  }
 
   @media (max-width: 768px) {
     .sectionWrapper {

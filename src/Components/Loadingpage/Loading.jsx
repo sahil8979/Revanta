@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
 import Lottie from 'react-lottie';
+import { useState, useEffect } from 'react';
 import carAnimation from '../../lottie/Animation - 1728494437546.json'; // Ensure the path is correct to your Lottie file
 import './Loading.css';
 
