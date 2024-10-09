@@ -32,7 +32,7 @@ const Footer = () => {
 
           <div className='section'>
             <div className='nit'>
-          <img  id="nitlogo" src={nitlogo} />
+         <a href="https://www.nith.ac.in/"> <img  id="nitlogo" src={nitlogo} /> </a>
           </div>
           </div>
         </div>
