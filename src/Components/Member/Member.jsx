@@ -516,6 +516,71 @@ const Member = () => {
           <h3>Name</h3>
           <p>Domain</p>
        </div>
+
+        {/* Member 1 */}
+        <div className="member-card">
+          <div className="image-container">
+            <img src={img} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Name</h3>
+          <p>Domain</p>
+       </div>
+        {/* Member 1 */}
+        <div className="member-card">
+          <div className="image-container">
+            <img src={img} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Name</h3>
+          <p>Domain</p>
+       </div>
+        {/* Member 1 */}
+        <div className="member-card">
+          <div className="image-container">
+            <img src={img} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Name</h3>
+          <p>Domain</p>
+       </div>
+        {/* Member 1 */}
+        <div className="member-card">
+          <div className="image-container">
+            <img src={img} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Name</h3>
+          <p>Domain</p>
+       </div>
      </div>
   </div>
   );
