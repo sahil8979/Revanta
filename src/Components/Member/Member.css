@@ -149,4 +149,7 @@ p{
     .quote-line-full{
         width: 95%;
     }
+    .first-text{
+        margin-bottom: -5px;
+    }
 }
