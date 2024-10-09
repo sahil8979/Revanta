@@ -27,6 +27,7 @@ import PiyushKeshari from '../../assets/IMG_20231220_184752 (1) - Piyush Keshri.
  import jayant from '../../assets/IMG_20241008_200100 - Jayant Rajput.jpg'
  import Harish from '../../assets/IMG-20240922-WA0000(1) - Harish Jha.jpg'
  import Priyanshu from '../../assets/priyanshu .jpg'
+ import sahil from '../../assets/sahil.jpg'
 {/* import Chirayu from '../../assets/Photo from Chirayu - CHIRAYU PANDEY.jpg'
 import from '../../assets'*/}
 
@@ -190,6 +191,23 @@ const Member = () => {
        <h1 className="year-heading">SECOND YEAR</h1>
       <hr className="year-line" />
       <div className="member-cards">
+
+        {/*Mohammad Sahil*/}
+        <div className="member-card">
+          <div className="image-container">
+            <img src={sahil} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/mohammad-sahil-386161289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/sahil_168o?igsh=d2htYjd4bDczcW11" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Mohammad Sahil</h3>
+          <p>Steering Domain</p>
+        </div>
 
         {/* Sangam */}
         <div className="member-card">

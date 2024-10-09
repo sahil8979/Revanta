@@ -23,7 +23,7 @@ const Readmore = () => {
       </div>
       <div className='Team-Journey'>
         <h2 id='heading'>Team Journey</h2>
-        <p className='welcome-text'>Founded in 2008, TeamRevanta started with a few passionate motorsport enthusiasts at NIT Hamirpur. Through dedication and teamwork, we have evolved into the colleges leading motorsport society. Our journey from a small group to a prominent force in collegiate racing showcases our commitment to innovation and excellence. Today, we proudly represent the pinnacle of motorsport achievement at NIT Hamirpur.</p>
+        <p className='welcome-text'>Founded in 2016, TeamRevanta started with a few passionate motorsport enthusiasts at NIT Hamirpur. Through dedication and teamwork, we have evolved into the colleges leading motorsport society. Our journey from a small group to a prominent force in collegiate racing showcases our commitment to innovation and excellence. Today, we proudly represent the pinnacle of motorsport achievement at NIT Hamirpur.</p>
       </div>
       <div className='Vision'>
         <h2 id='heading'>Vision</h2>

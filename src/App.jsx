@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import About from './Components/About/About';
@@ -10,18 +10,29 @@ import ScrollToTop from './ScrollToTop';
 import Gallery from './Components/Gallery/Gallery';
 import ContactUs from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
+import Loading from './Components/Loadingpage/Loading';
 
 const App = () => {
     const [fade, setFade] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setFade(true);
+        const timer = setTimeout(() => {
+            setLoading(false);
+            setFade(true);
+        }, 10500); // 3 seconds loading time
+
+        return () => clearTimeout(timer);
     }, []);
+
+    if (loading) {
+        return <Loading />;
+    }
 
     return (
         <Router>
             <ScrollToTop />
-            <div className={`app-container ${fade} ? 'fade-in': ''}`}>
+            <div className={`app-container ${fade ? 'fade-in' : ''}`}>
                 <Navbar />
                 <div className={`content-wrapper ${fade ? 'fade-in' : ''}`}>
                     <Routes>
@@ -32,13 +43,7 @@ const App = () => {
                                 <About />
                             </>
                         } />
-                        <Route path="/home" element={
-                            <>
-                                <Hero />
-                                <Title subTitle="About" title="Team Revanta" />
-                                <About />
-                            </>
-                        } />
+                        <Route path="/home" element={<Navigate to="/" />} />
                         <Route path="/about" element={<Readmore />} />
                         <Route path="/readmore" element={<Readmore />} />
                         <Route path="/member" element={<Member />} />
