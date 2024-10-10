@@ -72,3 +72,29 @@
         font-size: 2rem;
     }
 }
+@media (max-width: 650px){
+    @keyframes carMove {
+        0% {
+            transform: translateX(-100%); /* Start completely off the left */
+        }
+        100% {
+            transform: translateX(100vw); /* End completely off the right */
+        }
+    }
+    .loading-percent{
+        left: -18rem;
+    }
+}
+@media (max-width: 400px){
+    @keyframes carMove {
+        0% {
+            transform: translateX(-100%); /* Start completely off the left */
+        }
+        100% {
+            transform: translateX(100vw); /* End completely off the right */
+        }
+    }
+    .loading-percent{
+        left: -12rem;
+    }
+}
