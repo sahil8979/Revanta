@@ -1,0 +1,145 @@
+/* Wrapper for video background and content */
+.achievements-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: 100vw;
+  }
+  
+  .title-achieve {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  /* Background video */
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensures video is behind content */
+  }
+  
+  /* Content on top of video */
+  .content {
+    position: relative;
+    z-index: 1; /* Ensures content is on top of video */
+    padding: 20px;
+  }
+  
+  /* Container for all achievement blocks */
+  .achievements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  /* Show the blocks when they are visible */
+  .achievements-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Styling for each achievement block */
+  .achievement-block {
+    background-color: #25213430; /* Slight transparency */
+    color: white;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: solid 2px #00ff7f;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    font-weight: 500; /* Adjusted font-weight for clarity */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .achievement-block:hover {
+    transform: scale(1.1); /* Slightly increase size */
+    background-color: #00ff7f60;
+    border: solid 3px #00ff7f;
+    color: white;
+  }
+  
+  /* Simple fade-in and slide-up effect */
+  @keyframes fadeInSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Trophy icon container */
+  .icon-container {
+    margin: 0 auto 15px;
+    height: 50px;
+    width: 50px;
+  }
+  
+  /* Trophy icon styling */
+  .trophy-icon {
+    font-size: 50px;
+    color: #ffdf00; /* Gold color */
+  }
+  
+  /* Competition name styling */
+  .competition-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00ff7f;
+  }
+  
+  /* Competition details styling */
+  .competition-details {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center; /* Align text in the center */
+    line-height: 1.5; /* Ensure equal spacing between lines */
+  }
+  
+  /* Rank styling */
+  .competition-rank {
+    font-size: 1.2rem;
+    color: #ffdf00;
+  }
+  
+  /* Hover effect: Bring the achievement block forward */
+  .achievement-block:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive styling for tablets */
+  @media (max-width: 768px) {
+    .achievement-block {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+  
+  /* Responsive styling for mobile */
+  @media (max-width: 480px) {
+    .achievements-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .achievement-block {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  

@@ -11,6 +11,7 @@ import Gallery from './Components/Gallery/Gallery';
 import ContactUs from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Loading from './Components/Loadingpage/Loading';
+import Achievements from './Components/Achievements/Achievements';
 
 const App = () => {
     const [fade, setFade] = useState(false);
@@ -48,6 +49,7 @@ const App = () => {
                         <Route path="/readmore" element={<Readmore />} />
                         <Route path="/member" element={<Member />} />
                         <Route path="/gallery" element={<Gallery />} />
+                        <Route path="/achievements" element={<Achievements />} />
                         <Route path="/contact" element={<ContactUs />} />
                     </Routes>
                 </div>

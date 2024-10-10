@@ -13,7 +13,7 @@
 .car-container {
     display: flex;
     align-items: center;
-    animation: carMove 10s linear forwards; /* Car moves left to right */
+    animation: carMove 5s linear forwards; /* Car moves left to right */
     justify-content: flex-start;
     width: 100%;
     height: 150px;
@@ -38,7 +38,7 @@
     left: -16rem; /* Remove margin-left to eliminate gap */
     z-index: 1;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-    animation: percentMove 10s linear forwards; /* Sync the percentage with car movement */
+    animation: percentMove 5s linear forwards; /* Sync the percentage with car movement */
 }
 
 /* Loading text and animated dots container */

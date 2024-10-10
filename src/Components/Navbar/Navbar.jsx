@@ -30,7 +30,7 @@ const Navbar = () => {
           <li onClick={closeMenu}><Link to="/about">About</Link></li>
           <li onClick={closeMenu}><Link to="/member">Members</Link></li>
           <li onClick={closeMenu}><Link to="/gallery">Gallery</Link></li>
-          <li onClick={closeMenu}>Achievements</li>
+          <li onClick={closeMenu}><Link to ="/achievements" >Achievements </Link></li>
           <li onClick={closeMenu}>Sponsors</li>
           <li className='btn' id='navcontact' onClick={closeMenu}><Link to="/contact">Contact us</Link></li>
         </ul>
