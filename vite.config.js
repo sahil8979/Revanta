@@ -1,22 +1,23 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
       output: {
+        // Manual chunk splitting to optimize large dependencies
         manualChunks(id) {
-          // Prevent empty chunks by excluding specific modules or adjusting the logic
           if (id.includes('node_modules')) {
-            return id.split('/').pop().split('.')[0]; // Use last part as chunk name
+            if (id.includes('lottie-web')) {
+              return 'lottie-web'; // Separate chunk for lottie-web
+            }
+            return 'vendor'; // All other node_modules go into vendor chunk
           }
         },
-        // Remove empty chunks if they are generated
-        chunkFileNames: '[name]-[hash].js',
       },
     },
-    chunkSizeWarningLimit: 600,
+    // Increase chunk size warning limit to 1000 KB (adjust if needed)
+    chunkSizeWarningLimit: 1000,
   },
 });
