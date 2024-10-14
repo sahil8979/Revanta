@@ -97,4 +97,7 @@
     .loading-percent{
         left: -16rem;
     }
+    .loading-text {
+        margin-top: -10px;
+    }
 }

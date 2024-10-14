@@ -18,6 +18,7 @@ const Footer = () => {
               <li><a href="/achievements">Achievements</a></li>
               <li><a href="/gallery">Gallery</a></li>
               <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/sponsors">Sponsors</a></li>
             </ul>
           </div>
 

@@ -12,6 +12,7 @@ import ContactUs from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Loading from './Components/Loadingpage/Loading';
 import Achievements from './Components/Achievements/Achievements';
+import Sponsors from './Components/Sponsors/Sponsors';
 
 const App = () => {
     const [fade, setFade] = useState(false);
@@ -51,6 +52,7 @@ const App = () => {
                         <Route path="/gallery" element={<Gallery />} />
                         <Route path="/achievements" element={<Achievements />} />
                         <Route path="/contact" element={<ContactUs />} />
+                        <Route path="/sponsors" element={<Sponsors />} />
                     </Routes>
                 </div>
                 <Footer />
