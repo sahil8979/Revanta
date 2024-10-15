@@ -77,7 +77,7 @@ const Contact = () => {
             <p>
               <strong className='text'>Swapnil</strong><br />
               <span className="contact-info-item">
-               <a href="mailto:swapnil@example.com"> <FaEnvelope id='icon'/> </a> swapnil@example.com
+               <a href="mailto:swapnilsingh1967@gmail.com"> <FaEnvelope id='icon'/> </a> swapnilsingh1967@gmail.com
               </span>
               <span className="contact-info-item">
                 <a  href="tel:+918252486093"> <FaPhone id='icon' /> </a>  +91 8252486093
@@ -94,7 +94,7 @@ const Contact = () => {
             <p>
               <strong className='text'>Aman Upadhyay</strong><br />
               <span className="contact-info-item">
-               <a href="mailto:aman@example.com"><FaEnvelope id='icon'  /> </a> aman@example.com
+               <a href="mailto: au71206@outlook.com"><FaEnvelope id='icon'  /> </a> au71206@outlook.com
               </span>
               <span className="contact-info-item" >
                 <a href="tel:+919284219815"><FaPhone id='icon'  /></a> +91 9284219815

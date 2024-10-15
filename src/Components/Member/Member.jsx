@@ -180,7 +180,6 @@ const Member = () => {
             </div>
           </div>
           <h3>Piyush Keshri</h3>
-          <p>Suspension Head</p>
           <p className='domain'>Suspension Domain</p>
         </div>
         
@@ -306,7 +305,7 @@ const Member = () => {
             </div>
           </div>
           <h3>Priyanshu Chaudhary</h3>
-          <p>Domain</p>
+          <p>Powertrain Domain</p>
         </div>
 
         {/*Ajay Chaudhary */}
@@ -324,7 +323,7 @@ const Member = () => {
             </div>
           </div>
           <h3>Ajay Chaudhary</h3>
-          <p>Chassis</p>
+          <p>Chassis Domain</p>
         </div>
         {/* Harshit Pundeer */}
         <div className="member-card">

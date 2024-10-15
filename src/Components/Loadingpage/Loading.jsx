@@ -17,7 +17,7 @@ const LoadingComponent = () => {
           return 100; // Ensure it stays at 100% when done
         }
       });
-    }, 100); // Progress increases every 100ms (10 seconds total for 100%)
+    }, 50); // Progress increases every 50ms (5 seconds total for 100%)
 
     return () => clearInterval(interval);
   }, []);

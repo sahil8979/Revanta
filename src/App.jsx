@@ -22,7 +22,7 @@ const App = () => {
         const timer = setTimeout(() => {
             setLoading(false);
             setFade(true);
-        }, 10500); // 3 seconds loading time
+        }, 5500); // 3 seconds loading time
 
         return () => clearTimeout(timer);
     }, []);
