@@ -30,6 +30,9 @@ import PiyushKeshari from '../../assets/IMG_20231220_184752 (1) - Piyush Keshri.
  import sahil from '../../assets/sahil.jpg'
 {/* import Chirayu from '../../assets/Photo from Chirayu - CHIRAYU PANDEY.jpg'
 import from '../../assets'*/}
+import Purushu from '../../assets/IMG-20231025-WA0415 - Purushottam Singh.jpg'
+import Lakshya from '../../assets/IMG-20231220-WA0048 - Lakshya Chauhan.jpg'
+import sujeet from '../../assets/1727155400681 - Sujeet Kumar.jpg'
 
 
 const Member = () => {
@@ -165,6 +168,57 @@ const Member = () => {
           <p className='domain'>Steering Domain</p>
         </div>
          
+          {/* Purushottam  Singh */}
+        <div className="member-card">
+          <div className="image-container">
+            <img src={Purushu} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/purushottam-singh-9303bb25a" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/purushottam5043?igsh=emE5bnQxbDZhZmcz" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Purushottam Singh</h3>
+          <p>Suspension Domain</p>
+        </div>
+
+      {/* Sujeet kUmar */}
+      <div className="member-card">
+          <div className="image-container">
+            <img src={sujeet} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/sujeet-kumar-237696200?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/sujeetadarshi?igsh=MWR1MDg4YW5ia3NoMQ==" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Sujeet Kumar</h3>
+          <p>Powertrain Domain</p>
+        </div>
+
+{/* Lakshya Chauhan */}
+<div className="member-card">
+          <div className="image-container">
+            <img src={Lakshya} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/lakshya-chauhan-nirmal-singh-b55a302ab" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="#" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Lakshya Chauhan</h3>
+          <p>Breaking Domain</p>
+        </div>
+
          
         {/* Piyush Keshari  */}
         <div className="member-card">
