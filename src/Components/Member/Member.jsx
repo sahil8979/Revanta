@@ -132,42 +132,7 @@ const Member = () => {
           <p className='domain'>Powertrain Domain</p>
         </div>
          
-         {/* NIshant  */}
-        <div className="member-card">
-          <div className="image-container">
-            <img src={Nishant} alt="Member 1" className="profile-img" />
-            <div className="social-icons">
-              <a href="https://www.linkedin.com/in/nishant-prakhar" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="https://www.instagram.com/nishant.prakhar?igsh=ZW81MHRvOWcwbWRj" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-          <h3>Nishant Prakhar</h3>
-          <p>Chassis Head</p>
-          <p className='domain'>Chassis Domain</p>
-        </div>
-
-            {/* Aman Upadhyay */}
-        <div className="member-card">
-          <div className="image-container">
-            <img src={Amanu} alt="Member 1" className="profile-img" />
-            <div className="social-icons">
-              <a href="https://www.linkedin.com/in/aman-upadhyay-2ba44024b/" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="https://www.instagram.com/awishonaneyelash/" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-          <h3>Aman Upadhyay</h3>
-          <p>Steering Head</p>
-          <p className='domain'>Steering Domain</p>
-        </div>
-         
+  
           {/* Purushottam  Singh */}
         <div className="member-card">
           <div className="image-container">
@@ -182,9 +147,45 @@ const Member = () => {
             </div>
           </div>
           <h3>Purushottam Singh</h3>
-          <p>Suspension Domain</p>
+          <p>Vice Captain</p>
+          <p>Suspension Lead </p>
         </div>
 
+           {/* Aman Upadhyay */}
+           <div className="member-card">
+          <div className="image-container">
+            <img src={Amanu} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/aman-upadhyay-2ba44024b/" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/awishonaneyelash/" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Aman Upadhyay</h3>
+          <p>Manager</p>
+          <p className='domain'>Steering Lead</p>
+        </div>
+
+         {/* NIshant  */}
+         <div className="member-card">
+          <div className="image-container">
+            <img src={Nishant} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/nishant-prakhar" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/nishant.prakhar?igsh=ZW81MHRvOWcwbWRj" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Nishant Prakhar</h3>
+          <p>Chassis Lead</p>
+          <p className='domain'>Chassis Domain</p>
+        </div>
       {/* Sujeet kUmar */}
       <div className="member-card">
           <div className="image-container">
@@ -245,23 +246,7 @@ const Member = () => {
       <hr className="year-line" />
       <div className="member-cards">
 
-        {/*Mohammad Sahil*/}
-        <div className="member-card">
-          <div className="image-container">
-            <img src={sahil} alt="Member 1" className="profile-img" />
-            <div className="social-icons">
-              <a href="https://www.linkedin.com/in/mohammad-sahil-386161289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="https://www.instagram.com/sahil_168o?igsh=d2htYjd4bDczcW11" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-          <h3>Mohammad Sahil</h3>
-          <p>Steering Domain</p>
-        </div>
-
+        
         {/* Sangam */}
         <div className="member-card">
           <div className="image-container">
@@ -278,7 +263,24 @@ const Member = () => {
           <h3>Sangam Thakur</h3>
           <p className='domain'>Steering & Powertrain Domain</p>
         </div>
-        
+
+        {/*Mohammad Sahil*/}
+        <div className="member-card">
+          <div className="image-container">
+            <img src={sahil} alt="Member 1" className="profile-img" />
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/mohammad-sahil-386161289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/sahil_168o?igsh=d2htYjd4bDczcW11" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Mohammad Sahil</h3>
+          <p>Steering & Web Dev Domain</p>
+        </div>
+
         {/* Aryan  */}
         <div className="member-card">
           <div className="image-container">
