@@ -18,7 +18,7 @@ const About = () => {
           <button className='read-more' onClick={handleReadMore}>Read More</button>
         </div>
         <div className='about-img'>
-          <img src={aboutimg} alt='Motorsports' />
+          <img src={aboutimg} alt='Team Revanta NIT Hamirpur Motorsports' />
         </div>
       </div>
     </div>
