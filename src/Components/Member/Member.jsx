@@ -3,11 +3,23 @@ import Navbar from '../../Components/Navbar/Navbar';
 import './Member.css';
 import Title from '../Title/Title';
 import img from "../../assets/profile.png"
+//final year image import images import 
+import MohitSingh from '../../assets/Mohit Singh.jpg'
+import jayant from '../../assets/IMG_20241008_200100 - Jayant Rajput.jpg'
+ import Harish from '../../assets/IMG-20240922-WA0000(1) - Harish Jha.jpg'
+
+ {/* Third year images import */}
 import Swapnil from '../../assets/Swapnil.jpg'
 import Nishant from '../../assets/Nishant.jpg'
+import Amanu from '../../assets/FB2024 - Aman Upadhyay.png'
+import PiyushKeshari from '../../assets/IMG_20231220_184752 (1) - Piyush Keshri.jpg'
+import Purushu from '../../assets/IMG-20231025-WA0415 - Purushottam Singh.jpg'
+import Lakshya from '../../assets/IMG-20231220-WA0048 - Lakshya Chauhan.jpg'
+import sujeet from '../../assets/1727155400681 - Sujeet Kumar.jpg'
+
+{/* second year images import */}
 import Aryan from '../../assets/Aryan Kesharwnai.jpg'
 import Sangam from '../../assets/Sangam Thakur.jpg'
-import MohitSingh from '../../assets/Mohit Singh.jpg'
 import Divyanshu from '../../assets/Divyanshu Sharma.jpg'
 import AjayChaudhary from '../../assets/AJAY CHAUDHARY.jpg'
 import HarshitPundeer from '../../assets/Harshit Pundeer.jpg'
@@ -22,29 +34,201 @@ import KrishanPuniya from '../../assets/KRISHAN PUNIYA.jpg'
 import RiteshSharma from '../../assets/RITESH SHARMA.png'
 import ShabiThakur from '../../assets/SHABI THAKUR.jpg'
 import AyushDixit from '../../assets/AYUSH DIXIT.jpg'
-import Amanu from '../../assets/FB2024 - Aman Upadhyay.png'
-import PiyushKeshari from '../../assets/IMG_20231220_184752 (1) - Piyush Keshri.jpg'
- import jayant from '../../assets/IMG_20241008_200100 - Jayant Rajput.jpg'
- import Harish from '../../assets/IMG-20240922-WA0000(1) - Harish Jha.jpg'
- import Priyanshu from '../../assets/priyanshu .jpg'
- import sahil from '../../assets/sahil.jpg'
+import Priyanshu from '../../assets/priyanshu .jpg'
+import sahil from '../../assets/sahil.jpg'
 {/* import Chirayu from '../../assets/Photo from Chirayu - CHIRAYU PANDEY.jpg'
 import from '../../assets'*/}
-import Purushu from '../../assets/IMG-20231025-WA0415 - Purushottam Singh.jpg'
-import Lakshya from '../../assets/IMG-20231220-WA0048 - Lakshya Chauhan.jpg'
-import sujeet from '../../assets/1727155400681 - Sujeet Kumar.jpg'
 
+
+
+/*first year images import */
+import pallavi from '../../assets/IMG_20241212_180326_026 - PALLAVI PAL.jpg'
+import akansha from '../../assets/IMG_20241214_093519 - AKANKSHA K.jpg'
+import kriti from '../../assets/20241213_231130 - Kriti Rana.jpg'
+import anjani  from '../../assets/IMG-20241128-WA0048 - ANJANI SHARMA.jpg'
+import sneha from '../../assets/IMG_20241212_185038_535 - SNEHA S SHEKHAR.jpg'
+import prasi from '../../assets/Screenshot_2024-12-14-15-37-15-88_92460851df6f172a4592fca41cc2d2e6 - Prasi Mishra.jpg'
+import Sandhya from '../../assets/Screenshot_2024-12-14-09-05-03-84_99c04817c0de5652397fc8b56c3b3817 - SANDHYA K.jpg'
+import avichal from '../../assets/IMG-20241115-WA0059~3 - Avichal Maurya.jpg'
+import shujal from '../../assets/IMG-20241204-WA0013 - Shujal Chandel.jpg'
+import  tanishk from '../../assets/Revanta - Tanishk Kansal.jpg'
+import fateen from '../../assets/SmartSelect_20241214-120301_WhatsApp - Fateen Anwar.jpg'
+import rishabh from '../../assets/IMG_20241205_132929 - Rishabh Pandey.jpg'
+import saksham from '../../assets/IMG_20241214_135048 - SAKSHAM VERMA.jpg'
+import kuldeep from '../../assets/Screenshot_20241021-211441 - KULDEEP SINGH.jpg'
+import nikhilkumar from '../../assets/dada - NIKHIL KUMAR.jpg'
+import  premraj  from '../../assets/20241212_170810 - Prem Raj.jpg'
+import  ankit from '../../assets/IMG_20241214_180911 - ANKIT SHARMA.jpg'
+import  rahul from '../../assets/IMG_20241008_195737 - RAHUL KUMAR.jpg'
+import rajat  from '../../assets/IMG_20241213_131511 - Rajat Kesharwani.jpg'
+import manik from '../../assets/IMG_20240221_222045 - Manik Mehra.jpg'
+import hardik from '../../assets/IMG20241217164918_01~3 - Hardik Gupta.jpg'
+
+
+
+
+// Add first-year members data
+const firstYearMembers = [
+  {
+    name: 'Pallavi Pal',
+    domain: 'Domain 1',
+    img: pallavi,
+    linkedin: '#',
+    instagram: '#',
+  },
+  {
+    name: 'Akanksha',
+    domain: 'Domain 2',
+    img: akansha,
+    linkedin: 'https://www.linkedin.com/in/akanksha-vashisht-3a08352b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/__vas_hisht/profilecard/?igsh=d2tjaWkxanQybzRi',
+  },
+  {
+    name: 'Kriti',
+    domain: 'Domain 1',
+    img: kriti,
+    linkedin: '#',
+    instagram: '#',
+  },
+  {
+    name: 'Anjani Sharma',
+    domain: 'Domain 1',
+    img: anjani ,
+    linkedin: 'https://www.linkedin.com/in/anjani-sharma-772bb7341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/anjanisharma26?igsh=cTEzMjJpaGtibzBi',
+  },
+  {
+    name: 'Sneha S Shekhar',
+    domain: 'Domain 1',
+    img: sneha,
+    linkedin: 'https://www.linkedin.com/in/sneha-s-shekhar-28347b327',
+    instagram: 'https://www.instagram.com/infires_beauty/profilecard/?igsh=NGU3ZG90em9oNWts',
+  },
+  {
+    name: 'Prasi Mishra',
+    domain: 'Domain 1',
+    img: prasi ,
+    linkedin: '#',
+    instagram: '#',
+  },
+  {
+    name: 'Sandhya',
+    domain: 'Domain 1',
+    img: Sandhya,
+    linkedin: '#',
+    instagram: '#',
+  },
+  {
+    name: 'Avichal Maurya',
+    domain: 'Domain 1',
+    img: avichal,
+    linkedin: 'https://www.linkedin.com/in/avichal-maurya-187310333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/avichal_maurya024/profilecard/?igsh=MTY3aDNyYXplZHMz',
+  },
+  {
+    name: 'Shujal Chandel',
+    domain: 'Domain 1',
+    img: shujal,
+    linkedin: 'https://www.linkedin.com/in/shujal-chandel-5b2a00328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/shujal_chandel_/profilecard/?igsh=aWJ5aXU0ZHoyOGNo',
+  },
+  {
+    name: 'Tanishk',
+    domain: 'Domain 1',
+    img: tanishk ,
+    linkedin: 'https://www.linkedin.com/in/tanishk-kansal-467832322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/tanishk_kansal/profilecard/?igsh=dXFxMGN1b3EyOW0z',
+  },
+  {
+    name: 'Fateen Anwar',
+    domain: 'Domain 1',
+    img: fateen ,
+    linkedin: 'https://www.linkedin.com/in/fateen-a-4b669a283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/fateen_nith_/profilecard/?igsh=aWMxZHN2ZnNscGhk',
+  },
+  {
+    name: 'Rishabh Kumar Pandey ',
+    domain: 'Domain 1',
+    img: rishabh,
+    linkedin: 'https://www.linkedin.com/in/rishabh-pandey-412740326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: '#',
+  },
+  {
+    name: 'Saksham Verma',
+    domain: 'Domain 1',
+    img: saksham,
+    linkedin: 'https://www.linkedin.com/in/saksham-verma-59b791328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/verma.__saksham/',
+  },
+  {
+    name: 'Kuldeep Singh',
+    domain: 'Domain 1',
+    img: kuldeep ,
+    linkedin: '#',
+    instagram: '#',
+  },
+  {
+    name: 'Nikhil Kumar',
+    domain: 'Domain 1',
+    img: nikhilkumar ,
+    linkedin: 'https://www.linkedin.com/in/nikhil-kumar-95930227a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/_nikhil_372/profilecard/?igsh=MXN5Zjg3NDVkcjc5OA==',
+  },
+  {
+    name: 'Prem Raj',
+    domain: 'Domain 1',
+    img: premraj ,
+    linkedin: 'https://www.linkedin.com/in/prem-kumar-b16417306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/itz_prem_0320?igsh=d2RnaXVnNnF2aXJh',
+  },
+  {
+    name: 'Ankit Sharma',
+    domain: 'Domain 1',
+    img: ankit,
+    linkedin: 'https://www.linkedin.com/in/ankit-sharma-827a13324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/_ankit_sharma_130?igsh=MXFrZG5tZ3h1a3pnMg==',
+  },
+  {
+    name: 'Rahul Kumar',
+    domain: 'Domain 1',
+    img: rahul,
+    linkedin: 'https://www.linkedin.com/in/rahul-kumar-81a06b325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/rahul_kumar9493?utm_source=qr&igsh=OGkxM2F0aGVncGIx',
+  },
+  {
+    name: 'Rajat Kesharwani',
+    domain: 'Domain 1',
+    img: rajat,
+    linkedin: 'https://www.linkedin.com/in/rajat-kesharwani-772ba3317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/rajat_kesharwani314/profilecard/?igsh=MTFtbjI0Nmhrenh6eA==',
+  },
+  {
+    name: 'Manik',
+    domain: 'Domain 1',
+    img: manik ,
+    linkedin: 'https://www.linkedin.com/in/manik-mehra-b68018342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/manik_._7/profilecard/?igsh=bDI5NDJ2Z2s0dXZo',
+  },
+  {
+    name: 'Hardik Gupta ',
+    domain: 'Domain 1',
+    img: hardik,
+    linkedin: 'https://linkedin.com/in/Hg-Nith/',
+    instagram: '#',
+  },
+];
 
 const Member = () => {
   return (
     <div className='background'>
+      
       <Navbar />
       
       {/* Heading Section */}
       <div className="heading-text">
         <Title id="title" subTitle="Meet Our" title="Members" />
-        <p className="first-text">"A dynamic group of innovators and racers</p>
-        <p>Driven by a passion for motorsport excellence."</p>
+        <p className="first-text">A dynamic group of innovators and racers</p>
+        <p>Driven by a passion for motorsport excellence.</p>
         {/* Line after quote that spans the entire width */}
         <hr className="quote-line-full" />
       </div>
@@ -566,96 +750,50 @@ const Member = () => {
        */}
 
         </div>
-      
+
+
+ {/* -------------------------------------------------First year section--------------------------------------------------------------*/}
         
-        
-     {/* First Year Section */}
-     <h1 className="year-heading">FIRST YEAR</h1>
+       <h1 className="year-heading"> FIRST YEAR</h1>
       <hr className="year-line" />
       <div className="member-cards">
-        {/* Member 1 */}
-        <div className="member-card">
+        
+        <div className="member-cards">
+      {firstYearMembers.map((member, index) => (
+        <div className="member-card" key={index}>
           <div className="image-container">
-            <img src={img} alt="Member 1" className="profile-img" />
+            <img src={member.img} alt={member.name} className="profile-img" />
             <div className="social-icons">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-          <h3>Name</h3>
-          <p>Domain</p>
-       </div>
+              {/* Render LinkedIn link only if available */}
+              {member.linkedin ? (
+                <a href={member.linkedin}  rel="noopener noreferrer">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+              ) : (
+                <span className="inactive-icon">
+                  <i className="fab fa-linkedin"></i>
+                </span>
+              )}
 
-        {/* Member 1 */}
-        <div className="member-card">
-          <div className="image-container">
-            <img src={img} alt="Member 1" className="profile-img" />
-            <div className="social-icons">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
-              </a>
+              {/* Render Instagram link only if available */}
+              {member.instagram ? (
+                <a href={member.instagram}  rel="noopener noreferrer">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              ) : (
+                <span className="inactive-icon">
+                  <i className="fab fa-instagram"></i>
+                </span>
+              )}
             </div>
           </div>
-          <h3>Name</h3>
-          <p>Domain</p>
-       </div>
-        {/* Member 1 */}
-        <div className="member-card">
-          <div className="image-container">
-            <img src={img} alt="Member 1" className="profile-img" />
-            <div className="social-icons">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-          <h3>Name</h3>
-          <p>Domain</p>
-       </div>
-        {/* Member 1 */}
-        <div className="member-card">
-          <div className="image-container">
-            <img src={img} alt="Member 1" className="profile-img" />
-            <div className="social-icons">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-          <h3>Name</h3>
-          <p>Domain</p>
-       </div>
-        {/* Member 1 */}
-        <div className="member-card">
-          <div className="image-container">
-            <img src={img} alt="Member 1" className="profile-img" />
-            <div className="social-icons">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-          <h3>Name</h3>
-          <p>Domain</p>
-       </div>
-     </div>
-  </div>
+          <h3>{member.name}</h3>
+        </div>
+      ))}
+      </div>
+        </div>
+    </div>
+
   );
 };
 
