@@ -401,7 +401,7 @@ const Member = () => {
             </div>
           </div>
           <h3>Lakshya Chauhan</h3>
-          <p>Breaking Domain</p>
+          <p>Braking Domain</p>
         </div>
 
          
